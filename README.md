@@ -2,6 +2,8 @@
 
 DeepGINI is a test data sorting technology for deep learning. This warehouse is the experimental code of DeepGINI.
 
+-------
+
 ## How to run the code
 Since the original data is relatively large, we uploaded some of the data to the Baidu network disk. The data connection is as follows:
 
@@ -24,6 +26,8 @@ tqdm>=4.23.0
 foolbox>=1.7.0
 ```
 
+-------
+
 ## File code structure
 
 `model_mnist.py`,`model_fashion.py`,`model_svhn.py` and `model_cifar10.py` are model training and are trained for these training sets.
@@ -35,6 +39,8 @@ foolbox>=1.7.0
 `statistic.py`  is used to calculate apfd.
 
 Files such as `*_exp.py` are specific experiments for different data sets.
+
+-------
 
 ## data file structure
 
@@ -51,12 +57,10 @@ The data we use are mnist dataset, svhn dataset, fashion dataset, cifar10 datase
 
 `all_output`:The experimental results of deepgini are stored in this folder. We store the experimental results in CSV format. The file name of each csv corresponds to the method and parameters of the overlay. Each csv file contains four columns: the 'right' column indicates whether the model prediction for the sample is correct, the 'cam' column indicates the cam order for the sample (0 means no sort), and the 'ctm' column indicates ctm sorting, the 'rate' column indicates the coverage of the collection.
 
+-------
+
 ## Experimental result
 
 ![1](./src/1.png)
 
 ![2](./src/2.png)
-
-![3](./src/3.png)
-
-![4](./src/4.png)
