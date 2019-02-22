@@ -42,7 +42,7 @@ Files such as `*_exp.py` are specific experiments for different data sets.
 
 -------
 
-## data file structure
+## Data file structure
 
 This data contains 5 folders,`data`,`fashion-mnist`,`model`,`adv_image`,`all_output`.
 The data we use are mnist dataset, svhn dataset, fashion dataset, cifar10 dataset.
